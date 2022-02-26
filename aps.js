@@ -32,7 +32,7 @@ console.log(userName);
 
       for (let i = 0; i < attempts; i++)
   {
-      while (usersGuess < 1 || userGuess >) {
+      while (usersGuess < 1 || userGuess > 99 ) {
           userGuess = prompt("Please try again...! A number between 1 and 100");
       }
       if (userGuess == correctAmswer) {
@@ -44,5 +44,7 @@ console.log(userName);
           userGuess =prompt("Sorry, too low!! Please try a bit higher...");
       } if (i == 3){
           alert("the correct answer was " + correctAnswer);
-      }
-  }}
+          document.write("Game Loser!");
+       }
+     } 
+    }

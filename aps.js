@@ -15,7 +15,7 @@ console.log(userName);
  if (myName == "Darius") {
    document.write("Welcome Wade Wilson chimichangas are ready!")  
  } else {
-     document.write("Sorry no access here")
+     document.write("Sorry no access here.")
  }
   document.write(myName);
 

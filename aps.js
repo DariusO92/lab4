@@ -25,4 +25,24 @@ console.log(userName);
       } else {
           document.write("Try Something else")
       }
-  
+  function guessingGame(){
+      let userGuess = prompt("Please guess a number between 1 and 99...");
+      let correctAnswer = 85;
+      let attempts = 5;
+
+      for (let i = 0; i < attempts; i++)
+  {
+      while (usersGuess < 1 || userGuess >) {
+          userGuess = prompt("Please try again...! A number between 1 and 100");
+      }
+      if (userGuess == correctAmswer) {
+          alert("Winner Winner!");
+          break;
+      } else if (userGuess > correctAnswer) {
+          userGuess = prompt("Sorry, too high!! Please guess lower...");
+      } else if (userGuess < correctAnswer) {
+          userGuess =prompt("Sorry, too low!! Please try a bit higher...");
+      } if (i == 3){
+          alert("the correct answer was " + correctAnswer);
+      }
+  }}
